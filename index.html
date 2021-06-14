@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Onboarding Form</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+  <!--Onboarding form-->
+  <div class="wrapper">
+    <div class="title">
+      <h3>Onboarding Form</h3>
+    </div>
+    <div class="form">
+      <form action="/action_page.php">
+      <div class="inputfield">
+        <label>First Name</label>
+        <input type="text" class="input">
+      </div>
+      <div class="inputfield">
+        <label>Last Name</label>
+        <input type="text" class="input">
+      </div>
+      <div class="inputfield">
+        <label>Email</label>
+        <input type="email" class="input" id="email" pattern=".+@beststartupever\.com" size="30" required>
+      </div>
+      <div class="inputfield">
+        <label>Phone number</label>
+        <input type="tel" class="input" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required >
+      </div>
+      <div class="inputfield">
+        <label>Persona</label>
+        <div class="custom_select">
+          <select>
+            <option value="">Please Select</option>
+            <option value="intern" style="width: auto;">Young, just started as an intern in a big company, eager to learn and master her job </option>
+          </select>
+        </div>
+      </div>
+      <div class="rating">Task rating</div>
+      <div class="radio_wrapper">
+        <div>
+        <input type="radio" id="1" name="rating" value="1" class="radiofield">
+        <label for="1">1</label>
+        </div>
+        <div>
+        <input type="radio" id="2" name="rating" value="2" class="radiofield">
+        <label for="2">2</label>
+        </div>
+        <div>
+        <input type="radio" id="3" name="rating" value="3" class="radiofield">
+        <label for="3">3</label>
+        </div>
+        <div>
+        <input type="radio" id="4" name="rating" value="4" class="radiofield">
+        <label for="4">4</label>
+        </div>
+        <div>
+        <input type="radio" id="5" name="rating" value="5" class="radiofield">
+        <label for="5">5</label>
+        </div>
+      </div>
+      <div class="inputfield">
+        <label>File upload</label>
+          <input type="file" id="myFile" name="filename" class="input">
+      </div>
+      <div class="inputfield">
+        <label>Message</label>
+        <textarea class="textarea"></textarea>
+      </div>
+    <div class="fieldtext">
+      <p> Hubex AS is committed to protecting and respecting your privacy, and we’ll only use your personal information
+        to administer your account and to provide the products and services you requested from us. From time to time, we
+        would like to contact you about our products and services, as well as other content that may be of interest to
+        you. If you consent to us contacting you for this purpose, please tick below to say how you would like us to
+        contact you:</p>
+      </div>
+      <br>
+      <div class="inputfield terms">
+        <label class="check">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <p>I agree to receive other communications from Hubex AS.</p>
+      </div>
+      <div class="fieldtext_first"> 
+      <p>In order to provide you the content requested, we need to store and process your personal data. If you consent
+      to us storing your personal data for this purpose, please tick the checkbox below. </p>
+    </div>
+      <br>
+      <div class="inputfield terms">
+        <label class="check">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <p>I agree to receive other communications from Hubex AS.</p>
+      </div>
+      <div class="fieldtext_last">
+      <p>You can unsubscribe from these communications at any time. For more information on how to unsubscribe, our
+        privacy practices, and how we are committed to protecting and respecting your privacy, please review our Privacy
+        Policy. </p> 
+      </div>
+        <br>
+      <div class="inputfield">
+        <input type="submit" value="Submit" class="btn">
+      </div>
+    </div>
+  </form> 
+  </div>
+    </div>
+</body>
+
+</html>
